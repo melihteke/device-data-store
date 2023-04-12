@@ -48,7 +48,7 @@ while True:
             print(record)
 
     elif choice == "2":
-        hostname = input("Enter name of record to view: ")
+        hostname = input("Enter hostname of record to view: ")
         filters = {"hostname": hostname}
         records = device_data_store.view_specific_record(filters)
         for record in records:
@@ -65,6 +65,7 @@ while True:
         wan_a_ip_setting = input("Enter wan_a_ip_setting of the record:")
         wan_b_provider = input("Enter wan_b_provider of the record:")
         wan_b_ip_setting = input("Enter wan_b_ip_setting of the record:")
+        hardware = input("Enter hardware of the record:")
         serial = input("Enter serial of the record:")
         vlans = input("Enter vlans of the record:")
         l3_ints = input("Enter l3_ints of the record:")
