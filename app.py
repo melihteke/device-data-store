@@ -48,8 +48,8 @@ while True:
             print(record)
 
     elif choice == "2":
-        name = input("Enter name of record to view: ")
-        filters = {"name": name}
+        hostname = input("Enter name of record to view: ")
+        filters = {"hostname": hostname}
         records = device_data_store.view_specific_record(filters)
         for record in records:
             print(record)
