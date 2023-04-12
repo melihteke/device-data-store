@@ -2,9 +2,9 @@
 
 Welcome to the device data store application readme! This application is designed to showcase how easy it is to build a device data storage using MongoDB and Python. Although this is very basicimplementation of No-SQL DB, the purpose of this application is to demonstrate how NoSQL databases like MongoDB can be used in different fields, such as network automation as well.
 
-As a network engineer, you may need to store various types of data such as device names, site information, IP addresses, device statuses, contact information, and subnets and etc.. Instead of using traditional relational databases, NoSQL databases like MongoDB can provide greater flexibility and scalability in managing and organizing this data.
+As a network engineer, you may need to store various types of data such as device names, site information, IP addresses, device statuses, contact information, and subnets and etc.. Instead of using traditional relational databases or anoy other storing types, NoSQL databases like MongoDB can provide greater flexibility and scalability in managing and organizing this data.
 
-To get started with the phonebook application, please ensure that you have access to a MongoDB instance. In this example, we have used the FreeTier option available on https://cloud.mongodb.com/. However, you can use any MongoDB instance that is accessible to you.
+To get started with the data store application, please ensure that you have access to a MongoDB instance. In this example, I have used the FreeTier option available on https://cloud.mongodb.com/. However, you can use any MongoDB instance that is accessible to you.
 
 Here are the steps to set up and run the application:
 
