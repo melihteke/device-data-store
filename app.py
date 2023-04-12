@@ -98,13 +98,56 @@ while True:
 
     elif choice == "5":
         record_id = input("Enter ID of record to update: ")
-        name = input("Enter new name (leave blank to keep current name): ")
-        device_data_store = input("Enter new phone number (leave blank to keep current phone number): ")
+        
+        hostname = input("Enter hostname of the record(leave blank to keep current name):")
+        device_type = input("Enter device_type of the record(leave blank to keep current name):")
+        site_number = input("Enter site_number of the record(leave blank to keep current name):")
+        site = input("Enter site of the record(leave blank to keep current name):")
+        status = input("Enter status of the record(leave blank to keep current name):")
+        local_subnets = input("Enter local_subnets of the record(leave blank to keep current name):")
+        wan_a_provider = input("Enter wan_a_provider of the record(leave blank to keep current name):")
+        wan_a_ip_setting = input("Enter wan_a_ip_setting of the record(leave blank to keep current name):")
+        wan_b_provider = input("Enter wan_b_provider of the record(leave blank to keep current name):")
+        wan_b_ip_setting = input("Enter wan_b_ip_setting of the record(leave blank to keep current name):")
+        hardware = input("Enter hardware of the record(leave blank to keep current name):")
+        serial = input("Enter serial of the record(leave blank to keep current name):")
+        vlans = input("Enter vlans of the record(leave blank to keep current name):")
+        l3_ints = input("Enter l3_ints of the record(leave blank to keep current name):")
+        l2_ints = input("Enter l2_ints of the record(leave blank to keep current name):")
+
         updates = {}
-        if name:
-            updates["name"] = name
-        if phone:
-            updates["phone"] = phone
+        if hostname:
+            updates["hostname"] = hostname
+        if device_type:
+            updates["device_type"] = device_type
+        if site_number:
+            updates["site_number"] = site_number
+        if site:
+            updates["site"] = site
+        if status:
+            updates["status"] = status
+        if local_subnets:
+            updates["local_subnets"] = local_subnets
+        if wan_a_provider:
+            updates["wan_a_provider"] = wan_a_provider
+        if wan_a_ip_setting:
+            updates["wan_a_ip_setting"] = wan_a_ip_setting
+        if wan_b_provider:
+            updates["wan_b_provider"] = wan_b_provider
+        if wan_b_ip_setting:
+            updates["wan_b_ip_setting"] = wan_b_ip_setting
+        if hardware:
+            updates["hardware"] = hardware
+        if serial:
+            updates["serial"] = serial
+        if vlans:
+            updates["vlans"] = vlans
+        if l3_ints:
+            updates["l3_ints"] = l3_ints
+        if l2_ints:
+            updates["l2_ints"] = l2_ints
+            
+            
         device_data_store.update_record(record_id, updates)
         print("Record updated successfully!")
 
