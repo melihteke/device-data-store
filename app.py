@@ -55,9 +55,7 @@ while True:
             print(record)
 
     elif choice == "3":
-        name = input("Enter name: ")
-        phone = input("Enter phone number: ")
-        record = {"name": name, "phone": phone}
+        record = input("Enter new record: ")
         device_data_store.add_record(record)
         print("Record added successfully!")
 
