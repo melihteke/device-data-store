@@ -43,14 +43,14 @@ while True:
     choice = input("Enter an option: ").upper()
 
     if choice == "1":
-        records = phonebook.view_all_records()
+        records = device_data_store.view_all_records()
         for record in records:
             print(record)
 
     elif choice == "2":
         name = input("Enter name of record to view: ")
         filters = {"name": name}
-        records = phonebook.view_specific_record(filters)
+        records = device_data_store.view_specific_record(filters)
         for record in records:
             print(record)
 
@@ -58,24 +58,24 @@ while True:
         name = input("Enter name: ")
         phone = input("Enter phone number: ")
         record = {"name": name, "phone": phone}
-        phonebook.add_record(record)
+        device_data_store.add_record(record)
         print("Record added successfully!")
 
     elif choice == "4":
         record_id = input("Enter ID of record to delete: ")
-        phonebook.remove_record(record_id)
+        device_data_store.remove_record(record_id)
         print("Record deleted successfully!")
 
     elif choice == "5":
         record_id = input("Enter ID of record to update: ")
         name = input("Enter new name (leave blank to keep current name): ")
-        phone = input("Enter new phone number (leave blank to keep current phone number): ")
+        device_data_store = input("Enter new phone number (leave blank to keep current phone number): ")
         updates = {}
         if name:
             updates["name"] = name
         if phone:
             updates["phone"] = phone
-        phonebook.update_record(record_id, updates)
+        device_data_store.update_record(record_id, updates)
         print("Record updated successfully!")
 
     elif choice == "Q":
