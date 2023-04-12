@@ -55,7 +55,38 @@ while True:
             print(record)
 
     elif choice == "3":
-        record = input("Enter new record: ")
+        hostname = input("Enter hostname of the record:")
+        device_type = input("Enter device_type of the record:")
+        site_number = input("Enter site_number of the record:")
+        site = input("Enter site of the record:")
+        status = input("Enter status of the record:")
+        local_subnets = input("Enter local_subnets of the record:")
+        wan_a_provider = input("Enter wan_a_provider of the record:")
+        wan_a_ip_setting = input("Enter wan_a_ip_setting of the record:")
+        wan_b_provider = input("Enter wan_b_provider of the record:")
+        wan_b_ip_setting = input("Enter wan_b_ip_setting of the record:")
+        serial = input("Enter serial of the record:")
+        vlans = input("Enter vlans of the record:")
+        l3_ints = input("Enter l3_ints of the record:")
+        l2_ints = input("Enter l2_ints of the record:")
+        
+        record = {"hostname": hostname,
+                  "device_type":device_type,
+                  "site_number":site_number,
+                  "site":site,
+                  "status":status,
+                  "local_subnets":local_subnets,
+                  "wan_a_provider":wan_a_provider,
+                  "wan_a_ip_setting":wan_a_ip_setting,
+                  "wan_b_provider":wan_b_provider,
+                  "wan_b_ip_setting":wan_b_ip_setting,
+                  "hardware":hardware,
+                  "serial":serial,
+                  "vlans":vlans,
+                  "l3_ints":l3_ints,
+                  "l2_ints":l2_ints
+                 }
+                  
         device_data_store.add_record(record)
         print("Record added successfully!")
 
